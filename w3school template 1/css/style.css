@@ -1,0 +1,187 @@
+
+
+.content-area {
+    background-image: url("../imgs/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.content-area nav {
+    position: fixed;
+    min-height: 49px;
+}
+.content-area nav ul li a{
+    display: block;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    color: white;
+    transition: .1s;
+}
+.content-area nav ul li a:hover {
+    background-color: grey;
+}
+.content-area nav .menu {
+    margin-left: 10px;
+    font-size: 18px;
+}
+.content-area .container {
+    height: calc(100vh - 49px);
+}
+.content-area .container h1 {
+    padding-bottom: 100px;
+}
+.parag {
+    max-width: 800px;
+    margin: 30px auto 50px;
+    line-height: 1.4;
+    font-size: 16px;
+    text-align: start;
+}
+.persons {      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.persons .card {
+    max-width: 150px;
+    margin: 0 20px;
+}
+
+.persons .card img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.dates .container .date {
+    max-width: 780px;
+    margin: 30px auto;
+}
+.dates .container .date li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+.dates .container .date li a {
+    display: block;
+    padding: 15px;
+    background-color: white;
+    text-align: start;
+    font-size: 14px;
+    color: #777;
+}
+.dates .container .date li a span {
+    background-color: red;
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: white;
+}
+.dates .container .city {
+ justify-content: center;
+
+}
+.dates .container .city .city-card {
+    max-width: 245px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 12px;
+}
+.dates .container .city .city-card .cityname {
+    font-size: 16px;
+    padding: 20px 10px 5px;
+}
+.dates .container .city .city-card .citydate {
+
+    color: #777;
+    font-size: 17px;
+    padding: 10px;
+}
+.dates .container .city .city-card .citydescription {
+    padding-left: 10px;
+    margin-bottom: 30px;
+    max-width: 95%;
+    text-align: start;
+    font-size: 14px;
+}
+.dates .container .city .city-card .cityticket {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    margin: 0 0 20px 10px;
+}
+.dates .container .city .city-card img {
+    width: 100%;
+}
+.contact{ 
+    margin-bottom: 100px;
+}
+.contact .container .contacttitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .container .drop {
+    color: #777;
+    margin: 10px 0 50px;
+}
+.contact .container .contact-content {
+    max-width: 800px;
+}
+.contact .container .contact-content div{
+    flex: 1;
+}
+.contact-input-names {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact-input-names input {
+    width: 48%;
+}
+.img-location {
+    background-image: url("../imgs/imglocation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:767px) {
+    nav .menu {
+        display: block;
+    }
+    nav ul.links {
+        display: none;
+    }
+    .band .persons {
+        flex-wrap: wrap;
+    }
+    .band .persons .card {
+        max-width: 80%;
+    }
+    .dates .city {
+        flex-wrap: wrap;
+    }
+    .dates .city .city-card {
+        margin-bottom: 20px;
+    }
+    .contact-content {
+        width: 80%;
+        flex-direction: column;
+    }
+    .contact-content .senddata {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer .container{
+        margin: 40px auto;
+    }
+}
+@media (max-width:991px) {
+    .band .parag {
+        text-align: center;
+        max-width: 90%;
+    }
+}
