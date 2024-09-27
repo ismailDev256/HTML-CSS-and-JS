@@ -1,0 +1,128 @@
+:root {
+    --bg-color: #f1faee;
+    --bg-alt-color: #a8dadc;
+    --inputs-color: #457b9d;
+    --outputs-color: #1d3557;
+    --text-color: #0d1b2a;
+}
+.content-area {
+    position: relative;
+    overflow: hidden;
+}
+.content-area::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-alt-color);
+    transform: skewX(-35deg);
+    z-index: -1;
+}
+.titles .headline {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    position: relative;
+    color: var(--text-color);
+}
+.titles .headline::Before,
+.titles .headline::after {
+    content: '';
+    position: absolute;
+    background-color: #333;
+    bottom: 0;
+}
+.titles .headline::Before {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+.titles .headline::after {
+    width: 15px;
+    height: 15px;
+    border: 4px solid var(--bg-alt-color);
+    background-color: #e63946;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+.titles .description {
+    margin-top: 30px;
+    color: #0f1925;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .9px;
+}
+.tasks-container {
+    max-width: 400px;
+    height: fit-content;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 0 grey;
+}
+.user-inputs-task input{
+    border-radius: 7px;
+    outline: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.user-input-task-headline {
+    color: var(--text-color);
+    margin: 0 0 20px;
+}
+.addtask {
+    background-color: var(--text-color);
+    font-weight: 600;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    background-color: #ddd;
+    height: 1px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.user-outputs li {
+    width: 100%;
+    border-radius: 7px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.user-outputs li span:hover {
+    display: block;
+    width: 100%;
+    background-color: #ebe8e8;
+}
+.user-outputs li span {
+    display: block;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px;
+    padding-left: 30px;
+}
+.user-outputs li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-outputs li i {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+}
+.user-outputs li i:hover {
+    background-color: #999;
+}
+.user-outputs li span.checked {
+    text-decoration: line-through;
+    color: #777;
+}

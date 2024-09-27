@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --second-font: "Covered By Your Grace";
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-family: "Roboto Condensed", system-ui;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* sizes  */
+.w-full {
+    width: 100%;
+}
+.h-full {
+    min-height: 100vh;
+}
+.w-fit {
+    width: fit-content;
+}
+
+/* colors  */
+.bg-black {
+    background-color: #000;
+}
+.bg-white {
+    background-color: #fff;
+}
+.c-white {
+    color: #ffff;
+}
+.c-black {
+    color: #000;
+}
+
+/* display  */
+.d-flex {
+    display: flex;
+}
+.f-column {
+    flex-direction: column;
+}
+.a-center {
+    align-items: center;
+}
+.j-between {
+    justify-content: space-between;
+}
+.j-end {
+    justify-content: flex-end;
+}
+.d-block {
+    display: block;
+}
+
+/* .spaces  */
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-20 {
+    padding: 20px;
+}
+.mt-80 {
+    margin-top: 80px;
+}
+
+
+
+/* texts  */
+.t-center {
+    text-align: center;
+}
+
+/* borders and box shadow  */
+.b-1 {
+    border: 2px solid #ddd;
+}
+.br-7 {
+    border-radius: 7px;
+}
+
+/* positions  */
+.r-position{
+    position: relative;
+}
